@@ -31,7 +31,7 @@ $projets = $statement->fetchAll(PDO::FETCH_ASSOC);
 
   <!-----my-css--
   <link rel="stylesheet" href="app.css">------>
-  <title>Product CRUD</title>
+  <title>Project CRUD</title>
 </head>
 
 
@@ -66,8 +66,8 @@ $projets = $statement->fetchAll(PDO::FETCH_ASSOC);
             <?php echo $i + 1 ?>
           </th>
           <td>
-            <img style="width: 50px;" src="images/4EGD0JKK/airBnB MVP.PNG" alt="">
-            <!---- <img class="thumb-image" src="<?php echo $projet['image'] ?>"> --->
+            
+            <img style="width: 50px;" src="<?php echo $projet['image'] ?>">
           </td>
           <td>
             <?php echo $projet['nom_projet'] ?>
