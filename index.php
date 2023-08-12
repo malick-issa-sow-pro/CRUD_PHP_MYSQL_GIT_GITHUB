@@ -79,7 +79,7 @@ $projets = $statement->fetchAll(PDO::FETCH_ASSOC);
             <?php echo $projet['nombre_membre'] ?>
           </td>
           <td>
-            <a href="update.php?id=<?php echo $product['id'] ?>" type="button" class="btn btn-sm btn-outline-primary">Edite</a>
+            <a href="update.php?id=<?php echo $projet['id'] ?>" type="button" class="btn btn-sm btn-outline-primary">Edite</a>
             <form action="delete.php" method="post" style="display:inline-block">
               <input type="hidden" name="id" value="<?php echo $product['id'] ?>">
               <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
